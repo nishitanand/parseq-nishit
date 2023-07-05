@@ -1,0 +1,128 @@
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: 1M_lmdb
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: arpan_val_images_mdb
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: assamese_data
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: assamese_iiith_data
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: assamese_iiith_images_shashank.zip
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: assamese_synthetic_original_1M_val_data
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/charset.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/charset.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: config
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs/charset: assamese.yaml
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs/charset: kannada.yaml
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/configs/dataset/synth.yaml and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs/dataset/synth.yaml differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs: main_hi.yaml
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs: main_old.yaml
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/configs/main.yaml and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs/main.yaml differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/configs/model/parseq.yaml and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/configs/model/parseq.yaml differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq: data
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq: diff2.txt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: diff.txt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: epoch_47_test.ckpt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: epoch=49-step=416905-val_accuracy=15.4277-val_NED=51.6889.ckpt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: epoch=49-step=416905-val_accuracy=15.4277-val_NED=51.6889.ckpt.log.txt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: fun_test.py
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/config and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/config differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/applypatch-msg.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/applypatch-msg.sample differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks: fsmonitor-watchman.sample
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/pre-applypatch.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/pre-applypatch.sample differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/pre-commit.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/pre-commit.sample differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks: pre-merge-commit.sample
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/prepare-commit-msg.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/prepare-commit-msg.sample differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/pre-push.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/pre-push.sample differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/pre-rebase.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/pre-rebase.sample differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks: pre-receive.sample
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/hooks/update.sample and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/hooks/update.sample differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/index and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/index differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/logs/HEAD and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/logs/HEAD differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/logs/refs/heads/main and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/logs/refs/heads/main differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/logs/refs/remotes/origin/HEAD and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/logs/refs/remotes/origin/HEAD differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/objects/pack: pack-3aaf7b1514f0c28d2d125bda5e46ab90d04741ba.idx
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/objects/pack: pack-3aaf7b1514f0c28d2d125bda5e46ab90d04741ba.pack
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/objects/pack: pack-a647eca7acff42ed7e750107a243a6daa3a85c70.idx
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/objects/pack: pack-a647eca7acff42ed7e750107a243a6daa3a85c70.pack
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/packed-refs and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/packed-refs differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/.git/refs/heads/main and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/.git/refs/heads/main differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: gt.txt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: iiith_val_images_mdb
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: kannada_demo_imgs
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: labels_new.txt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: normalization_expts
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-28_19-42-29
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-28_19-50-25
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-28_19-54-05
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-29_11-01-40
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_08-56-54
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_09-37-24
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_09-44-27
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_09-47-28
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_09-51-09
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_10-01-47
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_10-08-22
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_11-49-47
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_12-32-38
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_12-33-35
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_12-36-41
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_12-45-28
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-06-30_12-55-48
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-07-04_16-42-57
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 2023-07-04_17-08-30
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/outputs/parseq: 2023-07-04_18-02-31
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 5M_v1_128_2023-06-06_14-23-09
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 5M_v1_256_2023-06-14_17-12-12
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq: 5M_v1_256_incomplete_good_reults_epoch_26_2023-06-12_17-17-08
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/outputs: parseq_pretrained
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: parseq6_june30_requrements.txt
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: parseq6_june30.yml
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: parseq.yml
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: pretrained=parseq.log.txt
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/__pycache__/charset.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/__pycache__/charset.cpython-38.pyc differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/README.md and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/README.md differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/read.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/read.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: requirements
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: requirements_copy.txt
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/requirements.txt and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/requirements.txt differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/data/dataset.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/dataset.py differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/data/module.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/module.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/__pycache__: aa_overrides.cpython-38.pyc
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/__pycache__: augment.cpython-38.pyc
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/data/__pycache__/dataset.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/__pycache__/dataset.cpython-38.pyc differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/data/__pycache__/__init__.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/__pycache__/__init__.cpython-38.pyc differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/data/__pycache__/module.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/__pycache__/module.cpython-38.pyc differ
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/data/__pycache__/utils.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/data/__pycache__/utils.cpython-38.pyc differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models: base_new.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models: base_new_v3.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models: base_original.py
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/models/base.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/base.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models: base_shashank.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models: base_v2.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/parseq: EffFormerModule.py
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/models/parseq/modules.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/parseq/modules.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/parseq: __pycache__
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/models/parseq/system.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/parseq/system.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/parseq: transformer.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/parseq: ViTConfig
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__: base.cpython-310.pyc
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/models/__pycache__/base.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__/base.cpython-38.pyc differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__: base.cpython-39.pyc
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__: __init__.cpython-310.pyc
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/models/__pycache__/__init__.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__/__init__.cpython-38.pyc differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__: __init__.cpython-39.pyc
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__: utils.cpython-310.pyc
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/models/__pycache__/utils.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__/utils.cpython-38.pyc differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/models/__pycache__: utils.cpython-39.pyc
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/__pycache__: __init__.cpython-310.pyc
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub/__pycache__/__init__.cpython-38.pyc and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/__pycache__/__init__.cpython-38.pyc differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub/__pycache__: __init__.cpython-39.pyc
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/strhub.egg-info/SOURCES.txt and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/strhub.egg-info/SOURCES.txt differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: test_changed.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: test_data
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: test_new.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: test_onnx_infer.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: test_onnxruntime.py
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: test_original_changed.py
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/test.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/test.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: train_data_4M_v1
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: train_ddp_process_1.log
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: train_ddp_process_2.log
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: train_ddp_process_3.log
+Files /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/train.py and /home/nishith/scratch/main/assamese_ocr/parseq/parseq/train.py differ
+Only in /home/nishith/scratch/main/assamese_ocr/parseq/parseq: .vscode

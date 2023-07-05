@@ -1,0 +1,1000 @@
+  568  conda env list
+  569  cd scratch
+  570  tmux a #
+  571  ls
+  572  vi parseq6_working.yml 
+  573  scp parseq6_working.yml devesh_temp@cse04.cse.iitd.ac.in
+  574  rm devesh_temp@cse04.cse.iitd.ac.in 
+  575  scp parseq6_working.yml devesh_temp@cse04.cse.iitd.ac.in:~/scratch
+  576  scp parseq6_working.yml devesh_temp@cse04.iitd.ac.in:~/scratch
+  577  scp parseq6_working.yml devesh_temp@vision04.iitd.ac.in:~/scratch
+  578  scp parseq6_working.yml devesh_temp@vision04.cse.iitd.ac.in:~/scratch
+  579  exit
+  580  ps u nishith
+  581  ps -u nishith
+  582  cd ~/scratch/main/assamese_ocr/parseq/parseq
+  583  ls
+  584  cd outputs/
+  585  ls
+  586  cd parseq
+  587  ls
+  588  cd 2023-06-14_15-14-13
+  589  ls
+  590  cd checkpoints/
+  591  ls
+  592  cd ../..
+  593  ls
+  594  cd 2023-06-14_16-51-10
+  595  ls
+  596  cd ..
+  597  ls
+  598  CUDA_VISIBLE_DEVICES=1 python ./test.py ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-06_14-23-09/ch eckpoints/'epoch=49-step=207399-val_accuracy=91.1847-val_NED=99.1011.ckpt' --data_root ~/scratch/main/assamese_ocr/parseq/parseq/assamese_data/ --assamese --language assamese
+  599  watch -n 0.3 nvidia-smi
+  600  nvidia-smi
+  601  fuser -v /dev/nvidia5
+  602  fuser -v /dev/nvidia6
+  603  kill -9 316900
+  604  fuser -v /dev/nvidia6
+  605  kill -9 397148
+  606  kill -9 397153
+  607  kill -9 397184
+  608  fuser -v /dev/nvidia6
+  609  fuser -v /dev/nvidia5
+  610  watch -n 0.3 nvidia-smi
+  611  cd /home/nishith/scratch/main/assamese_ocr/parseq/parseq
+  612  ls
+  613  cd assamese_test_data/
+  614  ;s
+  615  ls
+  616  cd ..
+  617  ls
+  618  screen -r test 
+  619  screen -r train
+  620  ls
+  621  cd scratch/main/assamese_ocr/parseq/parseq/
+  622  ls
+  623  cd assamese_data/
+  624  ls
+  625  cd test/
+  626  ls
+  627  cd assamese/
+  628  ls
+  629  rm -rf .
+  630  ls
+  631  rm -rf *
+  632  ;s
+  633  ls
+  634  cd ..
+  635  ls
+  636  du -shc
+  637  cd assamese/
+  638  clear
+  639  ls
+  640  watch -n 0.3 nvidia-smi
+  641  fuser -v /dev/nvidia5
+  642  fuser -v /dev/nvidia6
+  643  fuser -v /dev/nvidia7
+  644  lsof /dev/nvidia*
+  645  lsof /dev/nvidia1
+  646  lsof /dev/nvidia0
+  647  lsof /dev/nvidia2
+  648  ps -u nishith
+  649  ps -ef | grep nishith
+  650  ps -ef | grep ajay_k
+  651  ps -ef | grep anirudha
+  652  ps -ef | grep nishith
+  653  screen -r test 
+  654  cd scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-14_17-12-12/
+  655  ls
+  656  cd checkpoints/
+  657  ls
+  658  screen -r train
+  659  screen -r test 
+  660  cd ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-12_17-17-08
+  661  ls
+  662  cd .
+  663  ls
+  664  cd ..
+  665  ls
+  666  cd 2023-06-14_17-12-12
+  667  ld
+  668  ls
+  669  cd checkpoints/
+  670  ls
+  671  cd ..
+  672  ls
+  673  tensorboard --logdir . --port=2004
+  674  cd ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-12_17-17-08
+  675  tensorboard --logdir . --port=2003
+  676  cd ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-06_14-23-09
+  677  tensorboard --logdir . --port=2002
+  678  screen -ls
+  679  screen -r train
+  680  fuser -v /dev/nvidia0
+  681  fuser -v /dev/nvidia1
+  682  fuser -v /dev/nvidia2
+  683  fuser -v /dev/nvidia3
+  684  fuser -v /dev/nvidia4
+  685  fuser -v /dev/nvidia5
+  686  fuser -v /dev/nvidia6
+  687  fuser -v /dev/nvidia7
+  688  fuser -v /dev/nvidia8
+  689  fuser -v /dev/nvidia
+  690  nvidia-smi
+  691  cd scratch/main/assamese_ocr/parseq/parseq/outputs/
+  692  ls
+  693  cd parseq
+  694  ls
+  695  cd 2023-06-14_17-12-12
+  696  ls
+  697  cd checkpoints/
+  698  ls
+  699  screen -ls
+  700  screen -r test
+  701  cd ~/scratch/main/assamese_ocr/parseq/parseq
+  702  ;s
+  703  ls
+  704  CUDA_VISIBLE_DEVICES=1 python ./test.py ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-06_14-23-09/checkpoints/'epoch=49-step=207399-val_accuracy=91.1847-val_NED=99.1011.ckpt' --data_root ~/scratch/main/assamese_ocr/parseq/parseq/assamese_data/ --assamese --language assamese
+  705  conda activate parseq6
+  706  CUDA_VISIBLE_DEVICES=1 python ./test.py ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-06_14-23-09/checkpoints/'epoch=49-step=207399-val_accuracy=91.1847-val_NED=99.1011.ckpt' --data_root ~/scratch/main/assamese_ocr/parseq/parseq/assamese_data/ --assamese --language assamese
+  707  screen -r test 
+  708  CUDA_VISIBLE_DEVICES=1 python ./test.py ~/scratch/main/assamese_ocr/parseq/parseq/outputs/parseq/2023-06-06_14-23-09/checkpoints/'epoch=49-step=207399-val_accuracy=91.1847-val_NED=99.1011.ckpt' --data_root ~/scratch/main/assamese_ocr/parseq/parseq/assamese_data/ --assamese --language assamese
+  709  screen -r train 
+  710  nvidia-smi
+  711  watch -n 0.3 nvidia-smi
+  712  nvidia-smi
+  713  watch -n 0.3 nvidia-smi
+  714  nvidia-smi
+  715  screen -ls
+  716  acreen -r tr
+  717  screen -r train 
+  718  cd scratch/main/assamese_ocr/parseq/parseq/
+  719  ls
+  720  cd outputs/
+  721  ls
+  722  cd parseq
+  723  ls
+  724  cd 2023-06-14_17-12-12/
+  725  ls
+  726  cd checkpoints/
+  727  ls
+  728  screen -r test 
+  729  clear
+  730  ls
+  731  screen -r test 
+  732  cd /home/nishith/scratch/main/assamese_ocr/parseq/parseq/charset.py
+  733  cd /home/nishith/scratch/main/assamese_ocr/parseq/parseq/
+  734  ls
+  735  python ./read.py ./outputs/parseq/2023-06-06_14-23-09/checkpoints/'epoch=49-step=207399-val_accuracy=91.1847-val_NED=99.1011.ckpt' --images ./assamese_test_data/* --language assamese
+  736  cd assamese_test_data/
+  737  ls
+  738  rm -rf *
+  739  ls
+  740  cd ..
+  741  ls
+  742  python ./read.py ./outputs/parseq/2023-06-14_17-12-12/checkpoints/'epoch=49-step=207350-val_accuracy=29.6466-val_NED=81.3910.ckpt' --images ./assamese_test_data/* --language assamese
+  743  screen -r test
+  744  cd assamese_test_data/
+  745  ls
+  746  rm -rf *
+  747  rm -rf 
+  748  ls
+  749  rm -rf *
+  750  cd ..
+  751  rm -rf assamese_test_data/
+  752  ls
+  753  mkdir assamese_test_data
+  754  ls
+  755  screen -r test
+  756  code pred_real_difference.txt 
+  757  screen -r test 
+  758  code pred_real_difference_128.txt 
+  759  ls
+  760  cd scratch
+  761  ls
+  762  cd main/
+  763  ls
+  764  cd assamese_ocr/
+  765  ls
+  766  cd parseq/
+  767  ls
+  768  cd parseq/
+  769  ls
+  770  cd outputs/
+  771  ls
+  772  cd parseq
+  773  ls
+  774  cd 2023-06-14_17-12-12/
+  775  ls
+  776  cd checkpoints/
+  777  ls
+  778  cd ..
+  779  ls
+  780  cd ..
+  781  ls
+  782  cd 2023-06-14_15-14-13
+  783  ls
+  784  cd checkpoints/
+  785  ls
+  786  cd ..
+  787  ls
+  788  cd ..
+  789  ls
+  790  cd 2023-06-14_16-51-10
+  791  ls
+  792  cd ..
+  793  ls
+  794  cd 2023-06-07_12-01-43
+  795  ls
+  796  cd ..
+  797  ls
+  798  cd 2023-06-06_14-23-09
+  799  ls
+  800  cd checkpoints/
+  801  ls
+  802  scp epoch=49-step=207399-val_accuracy=91.1847-val_NED=99.1011.ckpt shashank_kv@vision02.cse.iitd.ac.in:~/scratch/parseq/
+  803  watch -n 0.3 nvidia-smi
+  804  screen -r train 
+  805  screen -r test 
+  806  cd /home/nishith/scratch/main/assamese_ocr/parseq/parseq/train.py
+  807  l
+  808  cd /home/nishith/scratch/main/assamese_ocr/parseq/parseq/
+  809  cd assamese_data/
+  810  ls
+  811  cd test/
+  812  ls
+  813  cd assamese/
+  814  ls
+  815  watch -n 0.3 nvidia-smi
+  816  nvidia-smi
+  817  fuser -v /dev/nvidia
+  818  fuser -v /dev/nvidia1
+  819  watch -n 0.3 nvidia-smi
+  820  wnvidia-smi
+  821  nvidia-smi
+  822  screen -ls
+  823  screen -r train 
+  824  rsync -azvP --exclude 'output' /home/data/submit/WORKING/nishit/trdg .
+  825  cd ../../../../..
+  826  ls
+  827  cd ../..
+  828  ls
+  829  clear
+  830  ls
+  831  rsync -azvP --exclude 'output' data@negroni.cse.iitd.ac.in:/home/data/submit/WORKING/nishit/trdg .
+  832  ls
+  833  ls -lrh
+  834  su -shc
+  835  du -shc
+  836  ls
+  837  cd assamese_ocr/
+  838  du -shc
+  839  cd ..
+  840  ls
+  841  cd trdg/
+  842  ls
+  843  rsync -azvP --exclude 'output' data@negroni.cse.iitd.ac.in:/home/data/submit/WORKING/nishit/trdg/trdg.yml .
+  844  ls
+  845  clear
+  846  ls
+  847  cd ../../../../../../..
+  848  ls
+  849  cd trdg
+  850  ls
+  851  conda env create -f trdg.yml 
+  852  conda activate trdg
+  853  conda deactivate
+  854  ls
+  855  sf -h .
+  856  df -h .
+  857  cd scratch
+  858  ls
+  859  df -h .
+  860  lsscreen -ls
+  861  screen -ls
+  862  screen -r trdg
+  863  screen -r test 
+  864  ls
+  865  cd trdg/
+  866  ls
+  867  htop
+  868  clear
+  869  ls
+  870  history
+  871  ls
+  872  clear
+  873  conda activate lmdb
+  874  python create_lmdb_v2.py --inputPath "5M/" --outputPath "5M_lmdb" --gtFile "5M/labels.txt" --num_processes 55
+  875  conda list
+  876  conda activate trdg
+  877  conda list
+  878  conda deactivate
+  879  conda activate lmdb
+  880  python create_lmdb_v2.py --inputPath "5M/" --outputPath "5M_lmdb" --gtFile "5M/labels.txt" --num_processes 55
+  881  conda deactivate
+  882  conda remove --name lmdb --all
+  883  cd ..
+  884  ls
+  885  cd ..
+  886  ls
+  887  conda env create -f lmdb.yml 
+  888  conda activate lmdb
+  889  python create_lmdb_v2.py --inputPath "5M/" --outputPath "5M_lmdb" --gtFile "5M/labels.txt" --num_processes 55
+  890  cd trdg/
+  891  cd output/
+  892  ls
+  893  python create_lmdb_v2.py --inputPath "5M/" --outputPath "5M_lmdb" --gtFile "5M/labels.txt" --num_processes 55
+  894  ls
+  895  cd 5M_lmdb/
+  896  ls
+  897  du -shc
+  898  cp data.mdb /home/nishith/scratch/main/assamese_ocr/parseq/parseq/assamese_data/train/synth/assamese/train
+  899  df -H
+  900  df -h .
+  901  df -h
+  902  ls -rlh
+  903  cp lock.mdb /home/nishith/scratch/main/assamese_ocr/parseq/parseq/assamese_data/train/synth/assamese/train
+  904  df -h .
+  905  du -shc
+  906  screen -ls
+  907  ls
+  908  chmod +x assamese_5M.sh 
+  909  ls
+  910  code assamese_5M.sh 
+  911  htop
+  912  nvidia-smi
+  913  ls
+  914  chmod +x assamese_5M_30_threads.sh 
+  915  chmod +x assamese_5M_55_threads.sh 
+  916  ls
+  917  ./assamese_5M_55_threads.sh 
+  918  conda activate trdg
+  919  ./assamese_5M_55_threads.sh 
+  920  cd ~/scratch/main/trdg
+  921  ls
+  922  cd trdg
+  923  ls
+  924  cd output/
+  925  ls
+  926  code create_lmdb_v2.py 
+  927  htop
+  928  df -h
+  929  df -h .
+  930  ls
+  931  cd ../../../..
+  932  df -h .
+  933  cd ..
+  934  ls
+  935  df -h .
+  936  cd ..
+  937  df -h .
+  938  ls
+  939  df -h
+  940  cd /dev/nvme1n1
+  941  ls
+  942  cd ..
+  943  ls
+  944  cd ..
+  945  la
+  946  ls
+  947  cd ..
+  948  ls
+  949  cd DATA/
+  950  ls
+  951  cd scratch/
+  952  ls
+  953  l
+  954  cd ../..
+  955  ls
+  956  cd home/
+  957  ls
+  958  l
+  959  cd nishith/
+  960  du -shc
+  961  ls
+  962  cd scratch
+  963  du -shc
+  964  conda create -n d_parseq python=3.8
+  965  conda activate d_parseq
+  966  pip install -r requirements.txt 
+  967  ls
+  968  pip install -r requirements.txt 
+  969  pip install -e .
+  970  df -h .
+  971  nvcc ooversion
+  972  nvcc --version
+  973  ls
+  974  rm torch-1.10.2+cu111-cp38-cp38-linux_x86_64.whl 
+  975  wget https://download.pytorch.org/whl/torch-1.13.0-cp38-cp38-manylinux2014_aarch64.whl
+  976  pip install torch-1.13.0-cp38-cp38-manylinux2014_aarch64.whl 
+  977  rm torch-1.13.0-cp38-cp38-manylinux2014_aarch64.whl 
+  978  ls
+  979  nvidia-smi
+  980  screen -ls
+  981  clear
+  982  nvidia-smi
+  983  clear
+  984  ls
+  985  nvidia-smi
+  986  ls
+  987  nvcc --version
+  988  nvidia-smi
+  989  ls
+  990  clear
+  991  ls
+  992  conda create -n june_parseq python=3.8
+  993  conda activate june_parseq
+  994  wget https://download.pytorch.org/whl/cu111/torch-1.10.2%2Bcu111-cp38-cp38-linux_x86_64.whl
+  995  ls
+  996  platform=cu113
+  997  make torch-${platform}
+  998  pip install pip-tools
+  999  make clean-reqs reqs
+ 1000  pip install -r requirements/core.${platform}.txt -e .[train,test]
+ 1001  platform=cu113
+ 1002  make torch-${platform}
+ 1003  pip install -r requirements/core.${platform}.txt -e .[train,test]
+ 1004  ls
+ 1005  wget https://download.pytorch.org/whl/cu113/torch-1.12.1%2Bcu113-cp38-cp38-linux_x86_64.whl
+ 1006  pip install torch-1.12.1+cu113-cp38-cp38-linux_x86_64.whl 
+ 1007  conda list
+ 1008  conda install -c conda-forge scipyt
+ 1009  conda install -c conda-forge scipy
+ 1010  pip install torch-1.12.1+cu113-cp38-cp38-linux_x86_64.whl 
+ 1011  cd ..
+ 1012  ls
+ 1013  mkdir d_parseq
+ 1014  cd d_parseq/
+ 1015  ls
+ 1016  git clone https://github.com/pantDevesh/parseq
+ 1017  cd parseq/
+ 1018  ls
+ 1019  code .
+ 1020  cd with open('labels.txt','r') as f, open('labels_new.txt','w') as f2:
+ 1021  #             f2.write("\n")
+ 1022  cd V
+ 1023  cd ~/scratch/main/assamese_ocr/parseq/parseq
+ 1024  ls
+ 1025  df -h .
+ 1026  cd ~/scratch/main/trdg/trdg/
+ 1027  lsd
+ 1028  ls
+ 1029  cd output/
+ 1030  ls
+ 1031  ls -lrh 5M/labels.txt
+ 1032  mv 5M/labels.txt .
+ 1033  ls
+ 1034  mv labels.txt labels_5M_old_+8_wrong.txt
+ 1035  ls
+ 1036  cd 5M\
+ 1037  cd 5M
+ 1038  pwd
+ 1039  ls
+ 1040  cd ..
+ 1041  ls
+ 1042  mv labels_new.txt labels.txt
+ 1043  ls
+ 1044  cp labels.txt 5M/
+ 1045  ls
+ 1046  mv labels.txt labels_5M_new.txt
+ 1047  ls
+ 1048  cd 5M_lmdb/
+ 1049  ls
+ 1050  cd ..
+ 1051  rm -rf 5M_lmdb/
+ 1052  ls
+ 1053  code create_lmdb_v2.py
+ 1054  cd ../..
+ 1055  ls
+ 1056  code assamese_5M_55_threads.sh 
+ 1057  ls
+ 1058  cd trdg/output/
+ 1059  ls
+ 1060  htop
+ 1061  nvidia-smi
+ 1062  ls
+ 1063  cd ../../../..
+ 1064  cd main/assamese_ocr/parseq/
+ 1065  ls
+ 1066  mkdir june_parseq
+ 1067  cd june_parseq/
+ 1068  ls
+ 1069  git clone https://github.com/baudm/parseq
+ 1070  ls
+ 1071  cd parseq/
+ 1072  ls
+ 1073  clear
+ 1074  ls
+ 1075  code .
+ 1076  nvidia-smi
+ 1077  ps -o user= -p PIDHERE
+ 1078  ps -o user= -p 1746516
+ 1079  ps -o user= -p 1757858
+ 1080  ps -o user= -p 1266675
+ 1081  ps -o user= -p 1266671
+ 1082  fuser -v /dev/nvidia1
+ 1083  fuser -v /dev/nvidia*
+ 1084  cd 1266671
+ 1085  cd ~/scratch/main/assamese_ocr/parseq/parseq
+ 1086  ls
+ 1087  cd outputs/
+ 1088  ls
+ 1089  cd parseq
+ 1090  ls
+ 1091  sreen -r test
+ 1092  screen -r test
+ 1093  screen -ls
+ 1094  nvidia-smi
+ 1095  conda activate parseq6
+ 1096  conda list
+ 1097  conda deactivate
+ 1098  screen -r test
+ 1099  conda activate parseq6
+ 1100  conda list
+ 1101  screen -r test
+ 1102  cd ../..
+ 1103  ls
+ 1104  CUDA_VISIBLE_DEVICES=5 python ./train.py dataset=synt
+ 1105  CUDA_VISIBLE_DEVICES=5 python ./train.py dataset=synth
+ 1106  ls
+ 1107  cd assamese_data/train/synth/assamese/train/
+ 1108  ls
+ 1109  rm -rf *
+ 1110  ls
+ 1111  df -h .
+ 1112  ls
+ 1113  df -h .
+ 1114  cd scratch
+ 1115  df -h .
+ 1116  cd main/trdg/trdg/output/
+ 1117  ls
+ 1118  cd 5M
+ 1119  ls
+ 1120  cd 5M_
+ 1121  cd ..
+ 1122  cd 5M_lmdb/
+ 1123  ls
+ 1124  du -shc
+ 1125  cd ..
+ 1126  ls
+ 1127  cd 5M
+ 1128  du -shc
+ 1129  cd ..
+ 1130  cd ~/scratch/main/assamese_ocr/parseq/parseq/
+ 1131  l
+ 1132  ls
+ 1133  cd assamese_data/
+ 1134  ls
+ 1135  cd train/
+ 1136  ls
+ 1137  cd synth/assamese/train/
+ 1138  ls
+ 1139  eu -dhc
+ 1140  du -shc
+ 1141  nvidia-smi
+ 1142  screen -r train
+ 1143  screen -r test
+ 1144  screen -r trdg 
+ 1145  screen -ls
+ 1146  screen -r train 
+ 1147  cd ~/scratch/main/trdg/trdg/output/
+ 1148  ls
+ 1149  screen -ls
+ 1150  screen -r test 
+ 1151  code .
+ 1152  screen -r test 
+ 1153  screen -r train 
+ 1154  screen -ls
+ 1155  screen -r train 
+ 1156  ls
+ 1157  code .
+ 1158  cd main/trdg/
+ 1159  ls
+ 1160  cd trdg/output/
+ 1161  ls
+ 1162  cd 5M_lmdb
+ 1163  ls
+ 1164  cd ..
+ 1165  ls
+ 1166  rsync -azvP labels_5M_new.txt nishit@negroni.cse.iitd.ac.in:/home/nishith/submit/WORKING/nishit/trdg/trdg/output
+ 1167  rsync -azvP labels_5M_new.txt data@negroni.cse.iitd.ac.in:/home/nishith/submit/WORKING/nishit/trdg/trdg/output
+ 1168  rsync -azvP labels_5M_new.txt data@negroni.cse.iitd.ac.in:/home/nishit/submit/WORKING/nishit/trdg/trdg/output
+ 1169  rsync -azvP labels_5M_new.txt nishit@negroni.cse.iitd.ac.in:/home/nishit/submit/WORKING/nishit/trdg/trdg/output
+ 1170  rsync -azvP labels_5M_new.txt data@negroni.cse.iitd.ac.in:/home/data/submit/WORKING/nishit/trdg/trdg/output
+ 1171  rsync -azvP labels_5M_new.txt nishit@negroni.cse.iitd.ac.in:/home/data/submit/WORKING/nishit/trdg/trdg/output
+ 1172  rsync -azvP labels_5M_new.txt data@negroni.cse.iitd.ac.in:/home/data/submit/WORKING/nishit/trdg/trdg/output
+ 1173  ls
+ 1174  ls -a
+ 1175  cd .github/
+ 1176  ls
+ 1177  ls -a
+ 1178  rm -rf .git
+ 1179  ls -a
+ 1180  git init
+ 1181  git add .
+ 1182  git status
+ 1183  git commit -m "Devesh Code"
+ 1184  git branch -M main
+ 1185  git remote add origin https://github.com/nishitanand/OCR.git
+ 1186  git push -u origin main
+ 1187  ls -a
+ 1188  rsync -azvP --exclude '*.mdb' ~/scratch/main/assamese_ocr/parseq/d_parseq/parseq/ .
+ 1189  git status
+ 1190  ls -a
+ 1191  rsync -azvP --exclude '*.mdb' ~/scratch/main/assamese_ocr/parseq/d_parseq/parseq/  ~/scratch/main/abc
+ 1192  rsync -azvP --exclude '*.mdb' ~/scratch/main/abc .
+ 1193  git status
+ 1194  rsync -azvP --exclude '*.mdb' --exclude '.git' ~/scratch/main/assamese_ocr/parseq/d_parseq/parseq/  ~/scratch/main/abcd
+ 1195  rsync -azvP --exclude '*.mdb' ~/scratch/main/abcd/ .
+ 1196  ls -a
+ 1197  git status
+ 1198  git add .
+ 1199  git commit -m "Nishit Code Updates"
+ 1200  git push -u origin main
+ 1201  code ~/scratch/main/abcd
+ 1202  cd ..
+ 1203  ls
+ 1204  cd parseq/
+ 1205  ls
+ 1206  mkdir devesh_parseq2
+ 1207  ls
+ 1208  cd devesh_parseq2/
+ 1209  ls
+ 1210  git clone
+ 1211  git clone https://github.com/pantDevesh/parseq
+ 1212  ls
+ 1213  cd parseq/
+ 1214  ls
+ 1215  code .
+ 1216  git clone https://github.com/pantDevesh/parseq
+ 1217  ls
+ 1218  cd ..
+ 1219  ls
+ 1220  git clone https://github.com/pantDevesh/parseq
+ 1221  ls
+ 1222  cd parseq/
+ 1223  code .
+ 1224  ls -a
+ 1225  ls
+ 1226  ls -a
+ 1227  cd .
+ 1228  ;s
+ 1229  ls
+ 1230  ls -a
+ 1231  rsync -azvP ~/scratch/main/assamese_ocr/parseq/d_parseq/parseq/ .
+ 1232  ls -a
+ 1233  code .gitignore 
+ 1234  git add -a
+ 1235  git add .
+ 1236  GIT STATUS
+ 1237  git status
+ 1238  git add .
+ 1239  git status
+ 1240  git add .
+ 1241  git status
+ 1242  git commit -m "Nishit Changes"
+ 1243  git config user.email nishitanand99@gmail.com
+ 1244  git config user.name nishitanand
+ 1245  git commit -m "Nishit Changes"
+ 1246  ls
+ 1247  ls -a
+ 1248  rsync -azvP ~/scratch/main/assamese_ocr/parseq/d_parseq/parseq/ .
+ 1249  cd ..
+ 1250  ls
+ 1251  cd ..
+ 1252  ls
+ 1253  cd nishit_parseq/
+ 1254  rm -rf *
+ 1255  ls
+ 1256  git clone
+ 1257  git clone https://github.com/nishitanand/parseq
+ 1258  ls
+ 1259  cd parseq/
+ 1260  ls
+ 1261  ls -a
+ 1262  rsync -azvP --exclude '*.mdb' ~/scratch/main/assamese_ocr/parseq/d_parseq/parseq/ .
+ 1263  ls
+ 1264  cd ..
+ 1265  ls
+ 1266  cd parseq/
+ 1267  ls
+ 1268  git add *
+ 1269  git add -a
+ 1270  git add .
+ 1271  git status
+ 1272  git commit -m "Nishit Changes"
+ 1273  git config --global user.email "nishitanand99@gmail.com"
+ 1274  git config --global user.name "nishitanand"
+ 1275  git commit -m "Nishit Changes"
+ 1276  git push origin main
+ 1277  code /home/nishith/scratch/main/assamese_ocr/parseq/parseq/charset.py
+ 1278  code /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq/charset.py
+ 1279  cd /home
+ 1280  sudo du -d 1 -h
+ 1281  du -d 1 -h
+ 1282  du -d 2 -h
+ 1283  du -xk | sort -n | tail -25
+ 1284  du -xkh | sort -n | tail -25
+ 1285  du -d 2 -xkh | sort -n | tail -25
+ 1286  du -d 1 -xkh | sort -n | tail -25
+ 1287  ls
+ 1288  cd nishith/
+ 1289  ls
+ 1290  cd scratch
+ 1291  du -shc
+ 1292  ls
+ 1293  cd main/
+ 1294  ls
+ 1295  df -h .
+ 1296  ls
+ 1297  cd configs/
+ 1298  ls
+ 1299  cd dataset/
+ 1300  ls
+ 1301  cat synth.yaml 
+ 1302  ls
+ 1303  cat real.yaml 
+ 1304  cat synth.yaml 
+ 1305  cd ..
+ 1306  ls
+ 1307  cd charset/
+ 1308  ls
+ 1309  code 94_full.yaml 
+ 1310  touch assamese_97.yaml
+ 1311  df -h .
+ 1312  df -h
+ 1313  ls
+ 1314  rm -rf assamese_97.yaml 
+ 1315  ls
+ 1316  cd ../..
+ 1317  ls
+ 1318  touch charset.py
+ 1319  code charset.py 
+ 1320  ls
+ 1321  code read.py 
+ 1322  code train.py 
+ 1323  ls
+ 1324  cd configs/
+ 1325  ls
+ 1326  screen -ls
+ 1327  screen -r train 
+ 1328  screen -r test
+ 1329  ls
+ 1330  clear
+ 1331  ls
+ 1332  cd ..
+ 1333  ls
+ 1334  clear
+ 1335  ls
+ 1336  clear
+ 1337  ls
+ 1338  pwd
+ 1339  ls
+ 1340  clear
+ 1341  l
+ 1342  sls
+ 1343  ls
+ 1344  clear
+ 1345  ls
+ 1346  df -h .
+ 1347  clear
+ 1348  df -h .
+ 1349  ls
+ 1350  cd ..
+ 1351  ls
+ 1352  mkdir nishit_parseq
+ 1353  cd nishit_parseq/
+ 1354  ls
+ 1355  git clone https://github.com/nishitanand/parseq-devesh
+ 1356  ls
+ 1357  cd parseq-devesh/
+ 1358  ls
+ 1359  rm -rf *
+ 1360  ls
+ 1361  cd ..
+ 1362  ls
+ 1363  rm -rf *
+ 1364  ls
+ 1365  git clone https://github.com/nishitanand/parseq
+ 1366  ls
+ 1367  cd parseq/
+ 1368  ls
+ 1369  code .
+ 1370  ls
+ 1371  cd ..
+ 1372  ls
+ 1373  cd ..
+ 1374  ls
+ 1375  cd d_parseq/
+ 1376  ls
+ 1377  cd parseq/
+ 1378  cd main/assamese_ocr/parseq/parseq/
+ 1379  ls
+ 1380  cd assamese_data/
+ 1381  ls
+ 1382  df -h .
+ 1383  ls
+ 1384  cd train/
+ 1385  ls
+ 1386  cd synth/
+ 1387  ls
+ 1388  cd assamese/
+ 1389  ls
+ 1390  cd train/
+ 1391  ls
+ 1392  l
+ 1393  ls
+ 1394  cd ..
+ 1395  ls
+ 1396  cd ..
+ 1397  l
+ 1398  cd ..
+ 1399  ls
+ 1400  cd ..
+ 1401  ls
+ 1402  cd test/
+ 1403  ls
+ 1404  cd assamese/
+ 1405  ls
+ 1406  cd ..
+ 1407  ls
+ 1408  cd val/
+ 1409  ls
+ 1410  cd val/
+ 1411  ls
+ 1412  cd ..
+ 1413  ls
+ 1414  cd train/
+ 1415  ls
+ 1416  cd synth/
+ 1417  ls
+ 1418  cd assamese/
+ 1419  ls
+ 1420  cd train/
+ 1421  ls
+ 1422  cd ../../../../..
+ 1423  ls
+ 1424  screen -r train 
+ 1425  ls
+ 1426  cd configs
+ 1427  ls
+ 1428  cd charset/
+ 1429  ls
+ 1430  cat assamese.yaml 
+ 1431  cd ..
+ 1432  ls
+ 1433  cd dataset/
+ 1434  ls
+ 1435  cat synth.yaml 
+ 1436  cd ../..
+ 1437  ls
+ 1438  cat charset.py 
+ 1439  code charset.py 
+ 1440  cd configs
+ 1441  ls
+ 1442  clear
+ 1443  ls
+ 1444  cd ..
+ 1445  ls
+ 1446  cd normalization_expts/
+ 1447  ls
+ 1448  cd v1_expts/
+ 1449  ls
+ 1450  cd ..
+ 1451  ls
+ 1452  screen -r test 
+ 1453  ls
+ 1454  apt install meld
+ 1455  apt-install meld
+ 1456  apt-get install meld
+ 1457  ls
+ 1458  diff -qr ~/scratch/main/assamese_ocr/d_parseq/parseq .
+ 1459  pwd
+ 1460  diff -qr /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq /home/nishith/scratch/main/assamese_ocr/parseq/parseq
+ 1461  diff -qr /home/nishith/scratch/main/assamese_ocr/parseq/d_parseq/parseq /home/nishith/scratch/main/assamese_ocr/parseq/parseq > diff.txt
+ 1462  ls
+ 1463  cat diff.txt 
+ 1464  ls
+ 1465  code .
+ 1466  screen -ls
+ 1467  ls
+ 1468  cd configs/
+ 1469  ls
+ 1470  cd charset/
+ 1471  ls
+ 1472  cd ..
+ 1473  ls
+ 1474  mkdir data
+ 1475  cd data/
+ 1476  ls
+ 1477  mkdir test
+ 1478  mkdir train
+ 1479  mkdir val
+ 1480  ls
+ 1481  cd train/
+ 1482  ls
+ 1483  mkdir synth
+ 1484  cd synth
+ 1485  code ~/scratch
+ 1486  ls
+ 1487  cp ~/scratch/main/trdg/trdg/output/5M_lmdb/lock.mdb .
+ 1488  ls
+ 1489  pwd
+ 1490  cd ..
+ 1491  ls
+ 1492  cd test/
+ 1493  ls
+ 1494  cd ..
+ 1495  ls
+ 1496  vd val
+ 1497  cd val
+ 1498  ls
+ 1499  cd ..
+ 1500  ls
+ 1501  cd val
+ 1502  ls
+ 1503  cd ..
+ 1504  ls
+ 1505  cd train/
+ 1506  cd synth/
+ 1507  ls
+ 1508  rm -rf *
+ 1509  ls
+ 1510  df -h .
+ 1511  cd ~/scratch/main/DBNET/github_DBNet
+ 1512  git clone https://github.com/nishitanand/parseq
+ 1513  ls
+ 1514  git clone https://github.com/MhLiao/DB
+ 1515  ls
+ 1516  cd DB/
+ 1517  ls
+ 1518  conda create --name DB -y
+ 1519  conda activate DB
+ 1520  pip install -r requirement.txt   
+ 1521  pip install --upgrade pip
+ 1522  pip install -r requirement.txt   
+ 1523  pip install opencv-python==4.3.0.38
+ 1524  pip install -r requirement.txt   
+ 1525  pip opencv-python==4.1.2.30
+ 1526  pip install opencv-python==4.1.2.30
+ 1527  pip install opencv-contrib-python==4.1.2.30
+ 1528  ls
+ 1529  pip install -r requirement.txt   
+ 1530  echo $CUDA_HOME
+ 1531  ls
+ 1532  gcc --version
+ 1533  nvcc --version
+ 1534  cd assets/ops/dcn/
+ 1535  ls
+ 1536  cd src/
+ 1537  ls
+ 1538  cd ..
+ 1539  python setup.py build_ext --inplace
+ 1540  conda list
+ 1541  ls
+ 1542  cd ..
+ 1543  ls
+ 1544  cd dcn
+ 1545  ls
+ 1546  python setup.py build_ext --inplace
+ 1547  echo $CUDA_HOME
+ 1548  python setup.py build_ext --inplace
+ 1549  cd ../../..
+ 1550  ls
+ 1551  cd ..
+ 1552  ls
+ 1553  mkdir DB2
+ 1554  cd DB
+ 1555  ls
+ 1556  nvcc --version
+ 1557  export CUDA_HOME=/usr/local/cuda-X.X
+ 1558  export CUDA_HOME=/usr/local/cuda-11.0
+ 1559  echo $CUDA_HOME
+ 1560  conda list
+ 1561  echo $CUDA_HOME
+ 1562  python setup.py build_ext --inplace
+ 1563  conda install -c conda-forge ninja
+ 1564  python setup.py build_ext --inplace
+ 1565  python3
+ 1566  history
+ 1567  history > history.txt

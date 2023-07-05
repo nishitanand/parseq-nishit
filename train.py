@@ -28,7 +28,9 @@ from pytorch_lightning.utilities.model_summary import summarize
 
 from strhub.data.module import SceneTextDataModule
 from strhub.models.base import BaseSystem
-from strhub.models.utils import create_model
+from strhub.models.utils import get_pretrained_weights
+
+from charset import get_charset
 
 
 @hydra.main(config_path='configs', config_name='main', version_base='1.2')
@@ -56,16 +58,44 @@ def main(config: DictConfig):
     if config.model.get('perm_mirrored', False):
         assert config.model.perm_num % 2 == 0, 'perm_num should be even if perm_mirrored = True'
 
+    if config.language != 'eng':	
+        if config.language == 'hi':	
+            charset_test = get_charset('hindi_128')	
+            charset_train = get_charset('hindi_142')	
+        if config.language == 'gujarati':	
+            charset_test = get_charset('gujarati')	
+            charset_train = get_charset('gujarati')	
+        if config.language == 'kannada':	
+            charset_test = get_charset('kannada')	
+            charset_train = get_charset('kannada')	
+        if config.language == 'odia':	
+            charset_test = get_charset('odia')	
+            charset_train = get_charset('odia')	
+        if config.language == 'bengali':	
+            charset_test = get_charset('bengali')	
+            charset_train = get_charset('bengali')
+        if config.language == 'assamese':	
+            charset_test = get_charset('assamese')	
+            charset_train = get_charset('assamese')	
+        if config.language == 'as97':	
+            charset_test = get_charset('as97')	
+            charset_train = get_charset('as97')	
+        
+        config.model.charset_train = charset_train	
+        config.model.charset_test = charset_test	
+        config.data.charset_train = charset_train	
+        config.data.charset_test = charset_test	
+
+
+    model: BaseSystem = hydra.utils.instantiate(config.model)
     # If specified, use pretrained weights to initialize the model
     if config.pretrained is not None:
-        model: BaseSystem = create_model(config.pretrained, True)
-    else:
-        model: BaseSystem = hydra.utils.instantiate(config.model)
+        model.load_state_dict(get_pretrained_weights(config.pretrained))
     print(summarize(model, max_depth=1 if model.hparams.name.startswith('parseq') else 2))
 
     datamodule: SceneTextDataModule = hydra.utils.instantiate(config.data)
 
-    checkpoint = ModelCheckpoint(monitor='val_accuracy', mode='max', save_top_k=3, save_last=True,
+    checkpoint = ModelCheckpoint(monitor='val_accuracy', mode='max', save_top_k=-1, save_last=True,
                                  filename='{epoch}-{step}-{val_accuracy:.4f}-{val_NED:.4f}')
     swa = StochasticWeightAveraging(swa_epoch_start=0.75)
     cwd = HydraConfig.get().runtime.output_dir if config.ckpt_path is None else \

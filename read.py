@@ -24,14 +24,32 @@ from strhub.data.module import SceneTextDataModule
 from strhub.models.utils import load_from_checkpoint, parse_model_args
 
 
+from charset import get_charset
+
 @torch.inference_mode()
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('checkpoint', help="Model checkpoint (or 'pretrained=<model_id>')")
     parser.add_argument('--images', nargs='+', help='Images to read')
     parser.add_argument('--device', default='cuda')
+
+    parser.add_argument('--language', default='hi')
+
     args, unknown = parser.parse_known_args()
     kwargs = parse_model_args(unknown)
+
+    if args.language == 'assamese':
+        charset_test=get_charset('assamese')
+    if args.language == 'as97':
+        charset_test=get_charset('as97')
+
+
+    
+    kwargs.update({'charset_test': charset_test})
+
+
+
+
     print(f'Additional keyword arguments: {kwargs}')
 
     model = load_from_checkpoint(args.checkpoint, **kwargs).eval().to(args.device)

@@ -83,24 +83,49 @@ class LmdbDataset(Dataset):
 
     def _preprocess_labels(self, charset, remove_whitespace, normalize_unicode, max_label_len, min_image_dim):
         charset_adapter = CharsetAdapter(charset)
+
+        print("Charset ", len(charset), charset)
+        print("Self-", self)
+
         with self._create_env() as env, env.begin() as txn:
             num_samples = int(txn.get('num-samples'.encode()))
             if self.unlabelled:
                 return num_samples
+            
+            print("Num Sample- ", num_samples)
+            
             for index in range(num_samples):
                 index += 1  # lmdb starts with 1
                 label_key = f'label-{index:09d}'.encode()
                 label = txn.get(label_key).decode()
+
+                # print("Sample No - ",index)
+                # print("label before: ", label)
+
+
                 # Normally, whitespace is removed from the labels.
                 if remove_whitespace:
                     label = ''.join(label.split())
+
+                # print("label after removing whitespace: ", label)
+
                 # Normalize unicode composites (if any) and convert to compatible ASCII characters
                 if normalize_unicode:
                     label = unicodedata.normalize('NFKD', label).encode('ascii', 'ignore').decode()
+                
+                # print("label after NFKD Normalization: ", label)
+                
                 # Filter by length before removing unsupported characters. The original label might be too long.
                 if len(label) > max_label_len:
                     continue
+                
+                # print("label after Max Length 25 Deletion: ", label)
+                
+                
                 label = charset_adapter(label)
+                
+                # print("label after Charset_adapter: ", label)
+                # break
                 # We filter out samples which don't contain any supported characters
                 if not label:
                     continue

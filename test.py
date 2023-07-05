@@ -27,6 +27,8 @@ from tqdm import tqdm
 from strhub.data.module import SceneTextDataModule
 from strhub.models.utils import load_from_checkpoint, parse_model_args
 
+from charset import get_charset
+
 
 @dataclass
 class Result:
@@ -73,6 +75,11 @@ def main():
     parser.add_argument('--new', action='store_true', default=False, help='Evaluate on new benchmark datasets')
     parser.add_argument('--rotation', type=int, default=0, help='Angle of rotation (counter clockwise) in degrees.')
     parser.add_argument('--device', default='cuda')
+
+    parser.add_argument('--language', default='hi')
+
+
+
     args, unknown = parser.parse_known_args()
     kwargs = parse_model_args(unknown)
 
@@ -81,15 +88,32 @@ def main():
         charset_test += string.ascii_uppercase
     if args.punctuation:
         charset_test += string.punctuation
+
+
+    if args.language == 'assamese':
+        charset_test=get_charset('assamese')
+    if args.language == 'as97':
+        charset_test=get_charset('as97')
+
+
     kwargs.update({'charset_test': charset_test})
     print(f'Additional keyword arguments: {kwargs}')
 
+
+    print("Checkpoint: ", args.checkpoint)
+
     model = load_from_checkpoint(args.checkpoint, **kwargs).eval().to(args.device)
     hp = model.hparams
+
+    print("Hyperparameters ": hp)
+
     datamodule = SceneTextDataModule(args.data_root, '_unused_', hp.img_size, hp.max_label_length, hp.charset_train,
                                      hp.charset_test, args.batch_size, args.num_workers, False, rotation=args.rotation)
 
-    test_set = SceneTextDataModule.TEST_BENCHMARK_SUB + SceneTextDataModule.TEST_BENCHMARK
+    if args.language=='as97':
+        test_set = SceneTextDataModule.TEST_ASSAMESE
+    else:
+        test_set = SceneTextDataModule.TEST_BENCHMARK_SUB + SceneTextDataModule.TEST_BENCHMARK
     if args.new:
         test_set += SceneTextDataModule.TEST_NEW
     test_set = sorted(set(test_set))
@@ -116,8 +140,11 @@ def main():
         results[name] = Result(name, total, accuracy, mean_ned, mean_conf, mean_label_length)
 
     result_groups = {
-        'Benchmark (Subset)': SceneTextDataModule.TEST_BENCHMARK_SUB,
-        'Benchmark': SceneTextDataModule.TEST_BENCHMARK
+        if args.language=='as97':
+            'Result on Assamese Data' : SceneTextDataModule.TEST_ASSAMESE
+        else:
+            'Benchmark (Subset)': SceneTextDataModule.TEST_BENCHMARK_SUB,
+            'Benchmark': SceneTextDataModule.TEST_BENCHMARK
     }
     if args.new:
         result_groups.update({'New': SceneTextDataModule.TEST_NEW})

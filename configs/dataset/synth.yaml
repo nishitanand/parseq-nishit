@@ -1,7 +1,9 @@
 # @package _global_
 data:
   train_dir: synth
-  num_workers: 3
+  num_workers: 3 #Original
+  # num_workers: 6 #Changed
 
 trainer:
-  limit_train_batches: 0.20496  # to match the steps per epoch of `real`
+  limit_train_batches: 0.20496  # to match the steps per epoch of `real` #Original
+  # limit_train_batches: 0.80496  #Changed
